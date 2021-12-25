@@ -52,8 +52,22 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Eureka! {}, myself {}!* 
-*An Anime themed group management bot from* [Steins;Gate](https://anilist.co/anime/9253)!!
+*𝙃𝙚𝙡𝙡𝙤 {},𝙄 𝙖𝙢 Infernipe,
+𝙄 𝙖𝙢 𝙖 𝘼𝙣𝙞𝙢𝙚 𝙩𝙝𝙚𝙢𝙚𝙙 𝙜𝙧𝙤𝙪𝙥 𝙢𝙖𝙣𝙖𝙜𝙚𝙢𝙚𝙣𝙩 𝙗𝙤𝙩
+𝙩𝙤 𝙢𝙖𝙠𝙚 𝙮𝙤𝙪𝙧 𝙜𝙧𝙤𝙪𝙥 𝙖𝙢𝙖𝙯𝙞𝙣𝙜.
+┏━━━━━━━━━━━━━━━━━━━
+┃ • I Wɪʟʟ Usᴇ Mʏ Fɪᴇʀʏ Pᴏᴡᴇʀs     
+┃ Aɴᴅ Pʀᴏᴛᴇᴄᴛ Yᴏᴜʀ Gʀᴏᴜᴘs. 
+┃
+┃ • Yᴏᴜ Cᴀɴ Fɪɴᴅ Mʏ Aᴠᴀɪʟᴀʙʟᴇ
+┃Cᴏᴍᴍᴀɴᴅs Wɪᴛʜ /help
+┃
+┃ • Iғ Aɴʏ Pʀᴏʙʟᴇᴍ Rᴇᴘᴏʀᴛ Iᴛ Tᴏ ┃Sᴜᴘᴘᴏʀᴛ ᴏʀ Mʏ Mᴀsᴛᴇʀ.
+┃
+┃ • Usᴇ Bᴜᴛᴛᴏɴs Bᴇʟᴏᴡ ᴛᴏ          
+┃   Kɴᴏᴡ  Mʏ Aᴠᴀɪʟᴀʙʟᴇ   
+┃   Fᴇᴀᴛᴜʀᴇs.
+┗━━━━━━━━━━━━━━━━━━━)!!
 
 • *Uptime:* `{}`
 • `{}` *users, across* `{}` *chats.*
@@ -64,17 +78,17 @@ HELP_STRINGS = """
 *AI Chatbot*, *Anime*, *Music*, *Notes*, *Filters*, *NSFW* *and more!*
 
 🎛 *All commands can either be used with* `/` *or* `!`.
-🎛 *Reach out for support:* @KurisuSupport [.](https://telegra.ph/file/2291942331f135e3292ee.png)
+🎛 *Reach out for support:* @sctbotssupport [.](https://telegra.ph/file/28999b8ab0525770229bf.jpg)
 """.format(
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-KURISU_IMG = "https://telegra.ph/file/6152bf2f73ca8ea30772a.png"
-KURISUIMGSTART = "https://telegra.ph/file/bd01a439fefb53170b36f.gif"
+KURISU_IMG =     "https://telegra.ph/file/9729d89a47b37eb9e47ce.jpg"
+KURISUIMGSTART = "https://telegra.ph/file/00acbeb6f78d556346a1c.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+There are two ways of supporting him; [contact my master](https://t.me/harshahero)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -195,8 +209,8 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="➕ Add Kurisu To Your Group",
-                            url="t.me/{}?startgroup=true".format(
+                            text="➕ Add infernipe To Your Group",
+                            url="t.me/{Infernipe_bot}?startgroup=true".format(
                                 context.bot.username))
                     ],
                      [
@@ -205,19 +219,19 @@ def start(update: Update, context: CallbackContext):
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
                              text="🎉 Updates",
-                             url="https://t.me/steinsupdates"),
+                             url="https://t.me/sctbotd"),
                          InlineKeyboardButton(
-                             text="🗃 Guide",
-                             url="https://t.me/Steinsupdates/7"),
+                             text=" My master💖",
+                             url="https://t.me/harshahero"),
               
                     ],
                      [
                         InlineKeyboardButton(
-                             text="Anime Chat",
-                             url="https://t.me/ias_chats"),                    
+                             text="my channel",
+                             url="https://t.me/supercartoonintelugu"),                    
                         InlineKeyboardButton(
                              text="Help & Commands",
-                             url="https://t.me/Kurisu_Makise_Robot?start=help"),      
+                             url="https://t.me/Infernipe_bot?start=help"),      
                     ]]))
     else:
         update.effective_message.reply_video(
